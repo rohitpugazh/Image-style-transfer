@@ -52,9 +52,9 @@ def load_image(img_path, max_size=400, shape=None):
     
     return image
 # load in content and style image
-content = load_image('C:/Users/Rohit Pugazhendi/AI_Project/janelle.png').to(device)
+content = load_image('images/janelle.png').to(device)
 # Resize style to match content, makes code easier
-style = load_image('C:/Users/Rohit Pugazhendi/AI_Project/delaunay.jpg', shape=content.shape[-2:]).to(device)
+style = load_image('images/delaunay.jpg', shape=content.shape[-2:]).to(device)
 
 # helper function for un-normalizing an image 
 # and converting it from a Tensor image to a NumPy image for display
